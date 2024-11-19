@@ -1,0 +1,40 @@
+@import 'colors';
+@import 'container';
+@import 'keybinds';
+@import 'result';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  body{
+    background: $background ;
+    font-family: 'Arial, sans-serif'; 
+  }
+
+ 
+
+.main-title{
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #333; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+ 
+}
+
+.title-second{
+  font-family: 'Lobster', cursive;
+  font-size: 32px;
+  color: #666;
+  text-align: center;
+  
+  }
+
+  

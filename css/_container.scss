@@ -1,0 +1,86 @@
+
+
+.container {
+  position: relative; 
+  max-width: 800px; 
+  top: 115px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+
+#hangman {
+    border: 4px solid #333; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #start-cont {
+    text-align: center;
+    width: 100%;
+}
+
+#start-cont button {
+    width: auto; /* Automatically fit the width to the text */
+    background-color: $btn; /* Replace $btn with the actual color value, e.g., blue */
+    padding: 0.6em 1.2em; /* Keep padding for some space around the text */
+    border: 2px solid $border; /* Replace $border with the actual border color value */
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px; /* Optional: add rounded corners for a modern look */
+    cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition for interactivity */
+}
+
+#start-cont button:active {
+    background-color: $btnActive; /* Replace $btnActive with the actual active color value */
+    font-weight: bold;
+    border: 2px solid $border; /* Adjust border color for the active state, if desired */
+}
+
+#hint-btn {
+    background-color: #007bff; /* Bright blue to stand out */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #hint-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  #hint-container {
+    display: none;
+    font-size: 18px;
+    color: #333;
+    background-color: #fff3cd; 
+    border: 1px solid #ffeeba;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+ 
+  
+  
+
+
