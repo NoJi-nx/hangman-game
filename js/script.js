@@ -11,13 +11,13 @@ const hintBtn = document.getElementById("hint-btn");
 
 
 
-let currentHint = ""; // This variable will store the current hint
-let gameStarted = false; // Tracks if the game has started
+let currentHint = "";
+let gameStarted = false; 
 let guesses = 0;
 let rightGuess = 0;
 let selectedWord = "";
 
-// Array of words for the game
+
 let wordList = {
     answers: [
         { word: "Html", hint: "Markup language for web pages" },
@@ -36,13 +36,13 @@ let wordList = {
     ],
 };
 
-// Function to start the game
+// start the game
 const playGame = () => {
     gameStarted = true;
     keyBindings.classList.remove("hide");
     startContainer.innerHTML = "";
 
-    // Choose a random word from the list along with its hint
+    // Choose a random word from the list
     const selectedEntry = wordList.answers[Math.floor(Math.random() * wordList.answers.length)];
     selectedWord = selectedEntry.word.toUpperCase();
     currentHint = selectedEntry.hint;
@@ -66,11 +66,11 @@ const playGame = () => {
     // Show the hint button when the game starts
     hintBtn.classList.remove("hide");
 
-    // Hide hint container initially
+    // Hide hint container 
     hintContainer.style.display = "none";
 };
 
-// Function to show the hint when the hint button is clicked
+// show the hint when the hint button is clicked
 const showHint = () => {
     hintContainer.innerText = `Hint: ${currentHint}`;
     hintContainer.style.display = "block"; // Show the hint container
@@ -79,7 +79,7 @@ const showHint = () => {
 // Attach event listener to the hint button
 hintBtn.addEventListener("click", showHint);
 
-// Function to handle game button clicks (triggered only if gameStarted is true)
+//  handle game button clicks 
 const handleLetterClick = (button) => {
     if (!gameStarted) {
         return; // Ignore button clicks if game hasn't started
@@ -114,7 +114,7 @@ const handleLetterClick = (button) => {
         }
     }
 
-    button.disabled = true; // Disable the button after it has been clicked
+    button.disabled = true; // Disable the button 
 };
 
 // Function to load the game setup on page load
@@ -171,7 +171,7 @@ const drawCanvas = () => {
         lineFigures.clearRect(0, 0, hangman.width, hangman.height);
     };
 
-    // Individual parts of the hangman drawing
+   
     const ground = () => {
         lineFigures.beginPath();
         lineFigures.moveTo(10, 230);
@@ -334,16 +334,16 @@ const endGame = () => {
     resultContainer.classList.remove("hide");
 };
 
-// Show the result screen when the game ends
+
 const toResults = () => {
     resultContainer.classList.remove("hide");
 };
 
-// Show the hint when the hint button is clicked
+
 hintBtn.addEventListener("click", () => {
     hintContainer.innerHTML = `<p>Hint: ${currentHint}</p>`;
 });
 
-// Reload the game when "New Game" button is clicked
+
 newGameBtn.addEventListener("click", loadFunction);
 window.onload = loadFunction;

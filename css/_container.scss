@@ -29,25 +29,25 @@
 }
 
 #start-cont button {
-    width: auto; /* Automatically fit the width to the text */
-    background-color: $btn; /* Replace $btn with the actual color value, e.g., blue */
-    padding: 0.6em 1.2em; /* Keep padding for some space around the text */
-    border: 2px solid $border; /* Replace $border with the actual border color value */
+    width: auto; 
+    background-color: $btn; 
+    padding: 0.6em 1.2em; 
+    border: 2px solid $border; 
     font-weight: bold;
     font-size: 18px;
-    border-radius: 5px; /* Optional: add rounded corners for a modern look */
-    cursor: pointer; /* Add pointer cursor to indicate it's clickable */
-    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition for interactivity */
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s; 
 }
 
 #start-cont button:active {
-    background-color: $btnActive; /* Replace $btnActive with the actual active color value */
+    background-color: $btnActive; 
     font-weight: bold;
-    border: 2px solid $border; /* Adjust border color for the active state, if desired */
+    border: 2px solid $border; 
 }
 
 #hint-btn {
-    background-color: #007bff; /* Bright blue to stand out */
+    background-color: #007bff; 
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -59,7 +59,7 @@
   }
   
   #hint-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
   }
   
   #hint-container {

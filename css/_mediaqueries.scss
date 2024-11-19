@@ -1,4 +1,26 @@
 
 
 
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 25%;
+        padding: 1em;
+    }
 
+    #hangman {
+        width: 20vw; /* Make canvas take a larger part of the screen width */
+        height: auto; /* Keep aspect ratio */
+    }
+
+    button.keys {
+        width: 12vw; /* Increase width for better tap areas on smaller screens */
+        font-size: 1.4em; /* Adjust font size to ensure readability */
+    }
+
+    #play-again,
+    #hint-btn {
+        width: auto;
+        padding: 0.6em 1.2em; /* Provide enough padding for easier tapping */
+        font-size: 1.2em; /* Slightly smaller to fit mobile view */
+    }
+}
